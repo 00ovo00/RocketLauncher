@@ -16,7 +16,7 @@ public class EnergySystemC : MonoBehaviour
 
     private void Update()
     {
-        Fuel += Time.deltaTime;
+        Fuel += Time.deltaTime; // 시간 지나면서 연료 채워짐
         OnEnergyChanged?.Invoke(Fuel);
     }
 }

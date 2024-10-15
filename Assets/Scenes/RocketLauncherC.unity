@@ -365,7 +365,6 @@ GameObject:
   - component: {fileID: 125341260}
   - component: {fileID: 125341265}
   - component: {fileID: 125341264}
-  - component: {fileID: 125341266}
   - component: {fileID: 125341267}
   m_Layer: 0
   m_Name: Rocket
@@ -598,18 +597,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fov: 45
   radius: 10
---- !u!114 &125341266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125341250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4873ab43ef1a4459ab1d05815e22ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &125341267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b3fd32b7ff5b2a54eb2fa7fa202e079a, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 0eea87cb991d4b342a982b4784ceb457, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:

@@ -1,14 +1,14 @@
 {
-    "name": "TopDownController2D",
+    "name": "RocketInputActions",
     "maps": [
         {
             "name": "Player",
-            "id": "b486db43-bbae-46ff-ab6b-4092fd32f92d",
+            "id": "f4fed704-8b80-4022-9480-1aeb5de008c8",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "874e7f51-1ba1-4aa1-94b8-45db6c08fb4d",
+                    "id": "f86e3613-f423-4ca7-adf6-15e563668854",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -16,29 +16,18 @@
                 },
                 {
                     "name": "Boost",
-                    "type": "Value",
-                    "id": "e4f7ed84-b9a3-43eb-8cd5-eb79f231076b",
-                    "expectedControlType": "Vector2",
+                    "type": "Button",
+                    "id": "90e723d5-628d-498f-b5cc-53f903292cb3",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "f2c363e7-60c2-48e4-9ae5-e8ccd9c6aaf9",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Boost",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
-                    "id": "4be2ab4c-7e9b-421e-959d-4e77b0a2599e",
+                    "id": "95103475-d44b-4de5-89d9-f54e05142776",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -49,7 +38,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "4ac29830-902a-4dfb-930c-dfbcec273dc3",
+                    "id": "508362dd-c2e9-4a1d-adcc-082182ee6b09",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -60,7 +49,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "15b601e5-f99d-4a2b-85c5-dd36d6d54dc1",
+                    "id": "eca0e11d-9896-48cb-9bf4-463586d3e7c4",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -71,7 +60,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "f9206b0f-b597-46c0-bd50-bf35c7fbd976",
+                    "id": "fecd5fae-fccc-4f62-8275-c9d73c99c541",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -82,7 +71,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "84696184-1abb-4b66-a9ad-9d6f052baf3f",
+                    "id": "577f05ec-4eaf-470d-9768-d38da1672ce6",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -90,6 +79,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "79387bb1-f903-4a60-be0d-8c7467dbccd1",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
