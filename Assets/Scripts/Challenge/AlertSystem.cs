@@ -3,10 +3,10 @@
 public class AlertSystem : MonoBehaviour
 {
     // fov가 45라면 45도 각도안에 있는 aesteriod를 인식할 수 있음.
-    [SerializeField] private float fov = 45f;
+    [SerializeField] private float fov = 45f;   // 소행성 탐지 시야각
     // radius가 10이라면 반지름 10 범위에서 aesteriod들을 인식할 수 있음.
-    [SerializeField] private float radius = 10f;
-    private float alertThreshold;
+    [SerializeField] private float radius = 10f;    // 소행성 탐지 반경
+    private float alertThreshold;   // 경보 알람 임계값
 
     private Animator animator;
     private static readonly int blinking = Animator.StringToHash("isBlinking");

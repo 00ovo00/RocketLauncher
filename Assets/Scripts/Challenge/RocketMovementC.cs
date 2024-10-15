@@ -19,6 +19,7 @@ public class RocketMovementC : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 로켓이 최고 기록보다 높은 고도에 도달하면 최고 기록 갱신
         if (!(highScore < transform.position.y)) return;
         highScore = transform.position.y;
         OnHighScoreChanged?.Invoke(highScore);
@@ -31,11 +32,17 @@ public class RocketMovementC : MonoBehaviour
 
     public void ApplyBoost()
     {
+        // 로켓에 위로 힘을 가함
         _rb2d.AddForce(transform.up * SPEED, ForceMode2D.Impulse);
     }
 
     private void Rotate(float inputX)
     {
         // 움직임에 따라 회전을 바꿈 -> 회전을 바꾸고 그 방향으로 발사를 해야 그쪽으로 가겠죠?
+        if (Mathf.Abs(inputX) > 0)
+        {
+            float rotationAmount = -inputX * ROTATIONSPEED * Time.fixedDeltaTime * 1000;
+            transform.Rotate(0, 0, rotationAmount);
+        }
     }
 }

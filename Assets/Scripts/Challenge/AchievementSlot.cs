@@ -15,10 +15,10 @@ public class AchievementSlot : MonoBehaviour
         descTxt.text = data.displayDesc;
         checkMark.SetActive(false);
     }
-
+    // 업적 해금 상태로 표시
     public void MarkAsChecked()
     {
-        checkMark.SetActive(true);
-        isUnlocked = true;
+        checkMark.SetActive(true);  // 체크마크 활성화
+        isUnlocked = true;  // 해금 상태로 변경
     }
 }
