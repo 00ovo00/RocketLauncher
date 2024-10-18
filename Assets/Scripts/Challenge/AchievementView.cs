@@ -10,10 +10,20 @@ public class AchievementView : MonoBehaviour
     public void CreateAchievementSlots(AchievementSO[] achievements)
     {
         // achievement 데이터에 따라 슬롯을 생성함
+        foreach (var achievement in achievements)
+        {
+            var slot = Instantiate(achievementSlotPrefab, transform).GetComponent<AchievementSlot>();
+            slot.Init(achievement);
+            achievementSlots.Add(achievement.threshold, slot);
+        }
     }
 
     public void UnlockAchievement(int threshold)
     {
         // UI 반영 로직
+        if (achievementSlots.TryGetValue(threshold, out var slot))
+        {
+            slot.MarkAsChecked();
+        }
     }
 }
